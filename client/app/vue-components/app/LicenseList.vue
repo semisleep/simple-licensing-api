@@ -12,19 +12,19 @@
       <md-table ref="table" v-model="items" :md-sort.sync="currentSort" :md-sort-order.sync="currentSortOrder"
                 :md-sort-fn="customSort" :md-height="tableBodyHeight" md-fixed-header @md-selected="onSelect">
         <md-table-row slot="md-table-row" slot-scope="{item}" md-selectable="multiple" md-auto-select>
-          <md-table-cell md-label="License Key">
+          <md-table-cell md-label="License Key" :style="{width: '35%'}">
             {{item.key}}
           </md-table-cell>
-          <md-table-cell md-label="Max Usage" md-numeric md-sort-by="maxUsage">
+          <md-table-cell md-label="Max Usage" md-numeric md-sort-by="maxUsage" :style="{width: '10%'}">
             {{item.maxUsage}}
           </md-table-cell>
-          <md-table-cell md-label="Current Usage" md-numeric md-sort-by="currentUsage">
+          <md-table-cell md-label="Current Usage" md-numeric md-sort-by="currentUsage" :style="{width: '10%'}">
             {{item.currentUsage}}
           </md-table-cell>
-          <md-table-cell md-label="Created At" md-numeric md-sort-by="createdAt">
+          <md-table-cell md-label="Created At" md-numeric md-sort-by="createdAt" :style="{width: '20%'}">
             {{item.createdAt | formatFullDate}}
           </md-table-cell>
-          <md-table-cell md-label="Last Validated At" md-numeric md-sort-by="lastValidatedAt">
+          <md-table-cell md-label="Last Validated At" md-numeric md-sort-by="lastValidatedAt" :style="{width: '20%'}">
             {{item.lastValidatedAt | formatFullDate}}
           </md-table-cell>
         </md-table-row>
