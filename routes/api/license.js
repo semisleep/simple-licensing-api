@@ -100,7 +100,7 @@ function generateProductKeys(count) {
 }
 
 function generateProductKey() {
-  let tokens = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+  let tokens = "ABCDEF0123456789",
     chars = 5,
     segments = 4,
     keyString = "";
