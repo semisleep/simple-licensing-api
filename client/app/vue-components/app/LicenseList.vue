@@ -29,6 +29,7 @@
           </md-table-cell>
         </md-table-row>
         <md-table-empty-state
+          v-if="!loading"
           md-label="The list is empty"
           md-description="Try to create your first batch of licenses by clicking the following button.">
           <md-button class="md-primary md-raised" @click="showGenerateLicensesDialog = true">Add Licenses</md-button>
