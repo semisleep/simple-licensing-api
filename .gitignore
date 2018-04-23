@@ -1,0 +1,9 @@
+.DS_Store
+/node_modules/
+/client/dist/
+/sessions
+/config.js
+*.log
+*.map
+/.idea
+/temporary
