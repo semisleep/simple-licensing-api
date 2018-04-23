@@ -107,7 +107,7 @@ function generateProductKey() {
   for (let i = 0; i < segments; i++) {
     let segment = "";
     for (let j = 0; j < chars; j++) {
-      let k = getRandomInt(0, 35);
+      let k = getRandomInt(0, tokens.length - 1);
       segment += tokens[k];
     }
     keyString += segment;
