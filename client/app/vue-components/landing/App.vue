@@ -6,8 +6,8 @@
           Simple Licensing API
         </div>
         <div class="buttons-wrapper">
-          <a class="github-button" href="https://github.com/semisleep/simple-vue-validator" data-icon="octicon-star" data-style="mega" aria-label="Star semisleep/simple-vue-validator on GitHub">Star</a>
-          <a class="github-button" href="https://github.com/semisleep/simple-vue-validator/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue semisleep/simple-vue-validator on GitHub">Issue</a>
+          <a class="github-button" href="https://github.com/semisleep/simple-licensing-api" data-icon="octicon-star" data-style="mega" aria-label="Star semisleep/simple-licensing-api on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/semisleep/simple-licensing-api/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue semisleep/simple-licensing-api on GitHub">Issue</a>
         </div>
       </div>
     </div>
@@ -34,7 +34,7 @@
           If what you want is a more sophisticated licensing solution, this project can still be a good starting point for you. Feel free to folk and make change to it :)
         </div>
         <div class="button-wrapper">
-          <md-button class="md-raised" :md-ripple="false">Check it out at Github</md-button>
+          <md-button class="md-raised" :md-ripple="false" @click="toGithub()">Check it out on Github</md-button>
         </div>
       </div>
       <div class="icon">📦</div>
@@ -162,6 +162,10 @@
     methods: {
       getStarted() {
         this.showAuthDialog = true;
+      },
+      toGithub() {
+        let win = window.open('https://github.com/semisleep/simple-licensing-api', '_blank');
+        win.focus();
       }
     }
   };

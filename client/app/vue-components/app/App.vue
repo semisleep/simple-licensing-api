@@ -10,8 +10,8 @@
         </md-button>
         <span class="md-title" style="flex: 1">Simple Licensing API - {{title}}</span>
         <div class="buttons-wrapper">
-          <a class="github-button" href="https://github.com/semisleep/simple-vue-validator" data-icon="octicon-star" data-style="mega" aria-label="Star semisleep/simple-vue-validator on GitHub">Star</a>
-          <a class="github-button" href="https://github.com/semisleep/simple-vue-validator/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue semisleep/simple-vue-validator on GitHub">Issue</a>
+          <a class="github-button" href="https://github.com/semisleep/simple-licensing-api" data-icon="octicon-star" data-style="mega" aria-label="Star semisleep/simple-licensing-api on GitHub">Star</a>
+          <a class="github-button" href="https://github.com/semisleep/simple-licensing-api/issues" data-icon="octicon-issue-opened" data-style="mega" aria-label="Issue semisleep/simple-licensing-api on GitHub">Issue</a>
         </div>
         <md-button class="md-icon-button" @click="signOut">
           <md-icon>exit_to_app</md-icon>
