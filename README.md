@@ -6,7 +6,7 @@ It generates license keys in bulk, and provides a simple RESTful + JSON API to a
 
 ## DEMO
 
-Check out the [live demo here](http://simple-licensing-api.magictek.cn).
+Check out the [live demo](http://simple-licensing-api.magictek.cn).
 
 ## How to install
 
