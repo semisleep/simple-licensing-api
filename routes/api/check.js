@@ -23,9 +23,9 @@ router.get('/', async (req, res) => {
   if (!license) {
     throw {status: 404, message: 'License not found.'};
   }
+  license.lastValidatedAt = new Date();
   let device = license.devices.find(device => device.identifier === identifier);
   if (device) {
-    license.lastValidatedAt = new Date();
     await license.save();
     res.json({success: true});
   } else if (license.currentUsage < license.maxUsage) {
