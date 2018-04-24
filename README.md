@@ -12,7 +12,7 @@ Check out the [live demo](http://simple-licensing-api.magictek.cn).
 
 1. Make sure you already have MongoDB installed.
 2. Clone this repository.
-3. Run `npm install` or `yarn install' to install all the dependencies.
+3. Run `npm install` or `yarn install` to install all the dependencies.
 4. Run `npm run watch` to build the client-side javascript using webpack.
 5. Copy `config.sample.js` to `config.js` and make changes to the configuration according to your specific environments.
 6. Run `node ./bin/www.js`.
