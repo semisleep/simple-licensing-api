@@ -88,15 +88,6 @@ module.exports = {
       {
         test: /\.css/,
         loaders: ExtractTextPlugin.extract(['css-loader?sourceMap', 'postcss-loader'])
-      },
-      {
-        test: /node_modules\/.*particles.js\//,
-        loaders: [
-          {
-            loader: 'exports-loader',
-            query: 'particlesJS'
-          }
-        ]
       }
     ]
   },
