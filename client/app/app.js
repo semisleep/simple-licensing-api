@@ -17,7 +17,6 @@ const router = new VueRouter({
     {
       path: '/doc',
       component: Doc,
-      alias: '/',
       meta: {
         title: 'Documentation'
       }
@@ -38,5 +37,10 @@ new Vue({
   router,
   render(h) {
     return h(App);
+  },
+  created() {
+    if (this.$route.path === '/') {
+      this.$router.push('/doc');
+    }
   }
 });
