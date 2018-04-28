@@ -14,6 +14,6 @@ let UserSchema = new Schema({
 
 UserSchema.index({code: 1, date: 1});
 
-let History = mongoose.model('User', UserSchema);
+let User = mongoose.model('User', UserSchema);
 
-module.exports.Model = History;
+module.exports.Model = User;

@@ -17,6 +17,6 @@ let LicenseKeySchema = new Schema({
   lastValidatedAt: Date
 });
 
-let History = mongoose.model('License', LicenseKeySchema);
+let License = mongoose.model('License', LicenseKeySchema);
 
-module.exports.Model = History;
+module.exports.Model = License;
