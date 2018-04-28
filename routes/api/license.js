@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
   let totalPages = Math.ceil(totalItems / pageSize);
   let sortBy = req.query.sortBy;
   let sortOrder = req.query.sortOrder;
-  let query = models.License.find({_owner: req.session.user._id});
+  let query = models.License.find(condition);
   if (sortBy) {
     let sort = {};
     sort[sortBy] = sortOrder === 'asc' ? 1 : -1;
