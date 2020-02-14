@@ -7,3 +7,5 @@
 *.map
 /.idea
 /temporary
+.vscode/
+.history/
