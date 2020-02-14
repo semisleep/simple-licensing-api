@@ -13,7 +13,7 @@
 
     <div class="section">
       To activate or validate a license from a device, make a GET request using the url similar to the following url.
-      <div class="code">http://simple-licensing-api.magictek.cn/api/check?key={{user.apiKey}}&license=xxxxx-xxxxx-xxxxx-xxxxx&device=0ee5040e9eaad5fe456c&extra=android</div>
+      <div class="code">{{baseUrl}}/api/check?key={{user.apiKey}}&license=xxxxx-xxxxx-xxxxx-xxxxx&device=0ee5040e9eaad5fe456c&extra=android</div>
     </div>
 
     <div class="section">
@@ -170,6 +170,9 @@
     computed: {
       user() {
         return window.preload.user || {};
+      },
+      baseUrl() {
+        return window.location.origin;
       }
     },
     methods: {

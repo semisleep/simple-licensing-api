@@ -17,7 +17,7 @@
 
   window.preload = {
     user: <%- JSON.stringify(session.user || null) %>,
-    data: <%- JSON.stringify(data) %>
+    data: <%- typeof data !== 'undefined' ? JSON.stringify(data) : '' %>
   };
 
 </script>
